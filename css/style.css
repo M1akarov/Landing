@@ -379,7 +379,12 @@ a {
   }
 }
 
+@media(max-width: 736px) {
+  .intro__img, .comfort__phone, .comfort__ipad, .footer__img {
+    display: none;
+  }
 
+}
 @media(max-width: 769px) {
 
   html, body {
@@ -499,6 +504,119 @@ a {
   .update__social {
     justify-content: center;
   }
+}
+
+@media(max-width: 415px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 400px;
+    padding: 0;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav__link {
+    margin-top: 10px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .intro__img, .comfort__phone, .comfort__ipad {
+    display: none;
+  }
+
+  .intro__inner--title  {
+    width: 300px;
+    height: 150px;
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .intro__inner--description {
+    text-align: left;
+    margin: 10px;
+  }
+
+  .intro__inner--button {
+    margin: 100px auto;
+  }
+
+  .intro__contacts {
+    width: 100%
+  }
+
+  .maybe, .rate{
+    height: 100vh;
+  }
+
+  .maybe__logotyps {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .maybe__logotyp {
+    margin-top: 40px;
+  }
+
+  .sale {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    margin: 0 auto;
+  }
+
+  .sale__item {
+    display: block;
+    margin: 30px auto;
+  }
+
+  .sale__item:first-child {
+    margin: 0 auto 30px;
+  }
 
 
+  .rate {
+    height: 100%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .rate__card {
+    margin: auto;
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+  }
+
+  .comfort{
+    height: 50vh;
+  }
+
+  .rate__description, .maybe__description, .comfort__description, .sale__description, .update__description {
+    text-align: left;
+    width: 350px;
+  }
+
+  .comfort__button {
+    margin: 100px auto;
+  }
+
+  .maybe {
+    height: 70vh;
+  }
+
+  .footer__img {
+    display: none;
+  }
 }
