@@ -408,6 +408,10 @@ a {
     padding: 0;
   }
 
+  .btn-menu {
+    display: none;
+  }
+
   .intro__inner {
     width: 100%;
   }
@@ -509,21 +513,48 @@ a {
 @media(max-width: 415px) {
   html, body {
     overflow-x: hidden;
+
   }
 
   .container {
     width: 400px;
-    padding: 0;
   }
 
   .nav {
     display: flex;
     flex-direction: column;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px #fff;
+    display: none;
   }
 
   .nav__link {
-    margin-top: 10px;
+    margin-top: 20px;
+    font-size: 20px;
   }
+
+  .btn-menu {
+    padding: 0;
+    margin: 0;
+    border: none;
+    top: 10px;
+    right: 10px;
+    position: fixed;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  .active {
+    display: block;
+  }
+
+
+
+
 
   .logo {
     display: none;
