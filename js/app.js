@@ -1,5 +1,6 @@
-$('.btn-menu').on('click', function(e) {
-  e.preventDefault;
-  $(this).toggleClass('btn-menu-active');
-  $('#nav').toggleClass('.active');
-});
+const menuBtn = document.querySelector('#menuBtn');
+const nav = document.querySelector('#nav')
+
+menuBtn.addEventListener('click', () => {
+  nav.classList.toggle('hidden');
+})
